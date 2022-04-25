@@ -3,7 +3,7 @@
 [![Actions Status](https://github.com/boldyrev/rails-project-lvl3/workflows/build/badge.svg)](https://github.com/boldyrev/rails-project-lvl3/actions)
 
 ### Sample deployed project
-[Demo](https://murmuring-hollows-89943.herokuapp.com/ )
+[Demo](https://hidden-atoll-24135.herokuapp.com/)
 
 ### How to install
 ```bash
