@@ -1,8 +1,12 @@
-require "test_helper"
+# frozen_string_literal: true
 
-class Web::BulletinsControllerTest < ActionDispatch::IntegrationTest
-  # test "should get index" do
-  #   get root_url
-  #   assert_response :success
-  # end
+require 'test_helper'
+
+module Web
+  class BulletinsControllerTest < ActionDispatch::IntegrationTest
+    # test "should get index" do
+    #   get root_url
+    #   assert_response :success
+    # end
+  end
 end
