@@ -1,6 +1,18 @@
 ru:
+  nav:
+    title: "Доска объявлений"
+    home: "Главная"
+    bulletins:
+      new: "Добавить"
   auth:
     signin: "Вход"
     signout: "Выход"
     success: "Вы успешно вошли в систему"
     fail: "Что-то пошло не так"
+  bulletins:
+    index:
+      title: "Объявления"
+    create:
+      success: "Объявление добавлено"
+    new: "Добавить объявление"
+    submit: "Создать"

@@ -1,0 +1,13 @@
+.mb-4
+  h2 = t('bulletins.index.title')
+  hr
+
+.row.mt-2
+  - @bulletins.each do |bulletin|
+    .col-3.pt-2
+      .card.shadow-sm
+          = image_tag bulletin.image, class: 'card-img-top', alt: bulletin.title, height: 200
+          .card-body
+              h5.card-title
+                = link_to bulletin.title, bulletin_path(bulletin)
+              h6.card-subtitle.mb-2.text-muted = bulletin.created_at.strftime('%d.%m.%y')
