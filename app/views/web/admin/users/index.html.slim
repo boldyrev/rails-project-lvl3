@@ -1,0 +1,16 @@
+.mb-4
+  h2 = t('.title')
+
+table.table
+  thead
+    tr
+    tr
+      th scope="col" = t('activerecord.attributes.user.name')
+      th scope="col" = t('activerecord.attributes.user.email')
+      th scope="col" = t('activerecord.attributes.user.created_at')
+  tbody
+    - @users.each do |user|
+      tr
+        td = user.name
+        td = user.email
+        td = user.created_at.strftime('%d.%m.%y')

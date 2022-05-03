@@ -10,5 +10,12 @@ Rails.application.routes.draw do
     resources :sessions, only: :destroy
 
     resources :bulletins, only: %i[index new create show]
+
+    namespace :admin do
+      root 'bulletins#index'
+      resources :categories, except: :show
+      resources :bulletins, only: :index
+      resources :users, only: :index
+    end
   end
 end

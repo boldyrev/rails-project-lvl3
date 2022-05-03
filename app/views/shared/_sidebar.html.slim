@@ -1,0 +1,17 @@
+- is_bulletins = current_page?(admin_bulletins_path) || \
+  current_page?(admin_root_path)
+
+- is_categories = current_page?(admin_categories_path)
+
+- is_users = current_page?(admin_users_path)
+
+ul.nav.nav-pills.flex-column.mb-auto
+  li.nav-item
+    = link_to t('web.admin.sidebar.bulletins'), admin_bulletins_path,
+      class: "nav-link link-dark #{'active' if is_bulletins}"
+  li.nav-item
+    = link_to t('web.admin.sidebar.categories'), admin_categories_path,
+      class: "nav-link link-dark #{'active' if is_categories}"
+  li.nav-item
+    = link_to t('web.admin.sidebar.users'), admin_users_path,
+      class: "nav-link link-dark #{'active' if is_users}"

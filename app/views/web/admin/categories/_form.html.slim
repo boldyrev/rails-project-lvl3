@@ -1,0 +1,4 @@
+= simple_form_for category, url: url do |f|
+  = f.input :name, class: 'form-group mb-3 string required'
+  = f.button :submit, t('.button_save'),
+    class: 'btn btn-outline-primary me-2 mt-2'

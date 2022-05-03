@@ -8,3 +8,17 @@ ru:
         description: "Описание"
         category: "Категория"
         image: "Изображение"
+        created_at: "Дата публикации"
+        state: "Состояние"
+      category:
+        name: "Название"
+      user:
+        name: "Имя"
+        email: "Электронная почта"
+        created_at: "Дата создания"
+    errors:
+      models:
+        category:
+          attributes:
+            name:
+              blank: "не может быть пустым"

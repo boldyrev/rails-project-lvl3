@@ -11,8 +11,7 @@ module Web
     end
 
     def create
-      @bulletin = Bulletin.new(bulletin_params)
-      @bulletin.user = current_user
+      @bulletin = current_user.bulletin.build(bulletin_params)
 
       if @bulletin.save
         redirect_to root_path, notice: t('bulletins.create.success')

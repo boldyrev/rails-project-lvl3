@@ -33,6 +33,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'omniauth-github'
 gem 'omniauth-rails_csrf_protection'
 gem 'pg'
+gem 'pundit'
 gem 'rollbar'
 gem 'simple_form'
 gem 'slim-rails'

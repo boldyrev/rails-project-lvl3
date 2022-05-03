@@ -1,7 +1,20 @@
 ru:
+  shared:
+    title: &title "Доска объявлений"
+    bulletins_title: &bulletins_title "Объявления"
+    users_title: &users_title "Пользователи"
+    actions: &actions "Действия"
+    action_show: &action_show "Показать"
+    action_edit: &action_edit "Редактировать"
+    action_delete: &action_delete "Удалить"
+    button_save: &button_save "Сохранить"
+
+  title: *title
+  not_authorized: "У вас нет прав для выполнения данного действия"
   nav:
-    title: "Доска объявлений"
+    title: *title
     home: "Главная"
+    admin: "Админка"
     bulletins:
       new: "Добавить"
   auth:
@@ -11,8 +24,44 @@ ru:
     fail: "Что-то пошло не так"
   bulletins:
     index:
-      title: "Объявления"
+      title: *bulletins_title
     create:
       success: "Объявление добавлено"
     new: "Добавить объявление"
     submit: "Создать"
+  web:
+    admin:
+      bulletins:
+        index:
+          title: *bulletins_title
+          col:
+            actions: *actions
+          show: *action_show
+      categories:
+        index:
+          add: "Добавить категорию"
+          title: "Категории"
+          action_edit: *action_edit
+          action_delete: *action_delete
+          col:
+            actions: *actions
+        new:
+          title: "Новая категория"
+        edit:
+          title: "Редактировать категорию"
+        form:
+          button_save: *button_save
+        create:
+          success: "Категория добавлена"
+        update:
+          success: "Категория обновлена"
+        destroy:
+          success: "Категория удалена"
+          error: "Произошла ошибка при удалении категории"
+      users:
+        index:
+          title: *users_title
+      sidebar:
+        bulletins: "Все объявления"
+        categories: "Все категории"
+        users: *users_title
